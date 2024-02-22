@@ -1,0 +1,15 @@
+
+
+@media (max-width: 600px) { 
+    header { border-bottom: solid black 1px; display: flex; justify-content: space-between; padding: 10px;}
+    header button{
+        color: black;
+        height: 50px;
+        width: 100px;
+        border-radius: 10%;
+    }
+    
+}
+
+
+
