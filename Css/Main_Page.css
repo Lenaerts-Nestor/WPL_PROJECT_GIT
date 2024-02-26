@@ -1,0 +1,73 @@
+
+@media  only screen and (max-width: 600px) { 
+
+    body{
+        background-color: #2980B9;
+    }
+    header{
+        border-bottom: solid black 1px;
+        margin-bottom: 2vh;
+        padding: 10px;
+        display: flex;
+        justify-content: end;
+    }
+    header button{
+        color: black;
+        height: 50px;
+        width: 100px;
+        border-radius: 10%;
+        
+    }
+}
+
+
+
+    
+.dropbtn {
+    background-image: url("../Images/User_Icon_Black.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: 30px;
+    background-color: lightgray;
+
+    color: white;
+    padding: 10px;
+    border: solid black 1px;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    text-align: center;
+    display: none;
+    position:fixed;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 10%; /*dit is om de positie van de content te tonnen, weinig aanraken aub !*/
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+    background-color: #2980B9;
+  }
+  .show {display: block;}
+
+    

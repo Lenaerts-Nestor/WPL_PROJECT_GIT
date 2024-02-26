@@ -8,11 +8,72 @@
 </head>
 <body>
     <header>
-            <button>login</button>
-            <button>register</button>
+        <section id="tohide"  class="buttons_before_logged">
+            <button onclick="Show_Hide_HeaderSection()">login</button>
+            <button onclick="Show_Hide_HeaderSection()">register</button>
+        </section>
+        
+        <section id="toshow" class="Icon_after_logged">
+            <button onclick="showDropdown()" class="dropbtn"></button>
+            <section id="myDropdown" class="dropdown-content">
+              <a href="#" onclick="ShowExtraInfo()">About</a>
+              <a href="#" onclick="Show_Hide_HeaderSection()">Logout</a>
+            </section>
+        </section>
     </header>
+
+   
+
     <main>
-        <section></section>
+        <section id="info_text" style="display: none;">
+            <section class="information_of_page">
+                <h3>Pagina Uitleg</h3>
+                <p>hieronder kan je de project kiezen die bij jouw hoort, click op de gewenste project en het zal je bringen naar de project</p>
+            </section>
+        </section>
+       <section class="content"> 
+            <section class="landing_page_projects">
+                <a href="../Pages/Main_Page.html">
+                    <p>Magic The Gathering</p>
+                    <section class="background_image_project" style="background-image: url(../Images/MTG_logo_2.jpg);"></section>
+                </a>
+            </section>
+
+            <section class="landing_page_projects">
+                    <p>FORNITE</p>
+                    <section class="background_image_project" style="background-image: url(../Images/fornite_background_image.jpg);"></section>
+            </section>
+
+            <section class="landing_page_projects">
+                
+                    <p>FIFA</p>
+                    <section class="background_image_project" style="background-image: url(../Images/Fifa_logo.jpg);"></section>
+            
+            </section>
+            <section class="landing_page_projects">
+            
+                    <p>LEGO</p>
+                    <section class="background_image_project" style="background-image: url(../Images/Lego_master_car_logo.jpg);"></section>
+            
+            </section>
+
+            <section class="landing_page_projects">
+            
+                    <p>POKEMON</p>
+                    <section class="background_image_project" style="background-image: url(../Images/pokemon.jpg);"></section>
+            
+            </section>
+
+            <section class="landing_page_projects">
+            
+                    <p>LORD OF THE RINGS</p>
+                    <section class="background_image_project" style="background-image: url(../Images/LOTR_ring_logo.jpg);"></section>
+
+            </section>
+        </section> 
     </main>
+
+    <script src="../JS/functions.js"></script>
+
 </body>
 </html>
