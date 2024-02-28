@@ -1,195 +1,214 @@
-
-body{
-    background-color: #2980B9;
+body {
+  background-color: #2980b9;
 }
 
 /*HEADER SECTION*/
-header{
-    border-bottom: solid black 1px;
-    margin-bottom: 1vh;
-    padding: 5px;
-}
-  
-header button{
-    color: black;
-    height: 60px;
-    width: 100px;
-    border-radius: 10%;
+header {
+  border-bottom: solid black 1px;
+  margin-bottom: 1vh;
+  padding: 5px;
 }
 
-.buttons_before_logged {  display: flex; justify-content: end; gap: 50px    ;}
-.Icon_after_logged{ display: none; justify-content: flex-end;}
-
-
-
-.content{
-    margin: auto;
-    display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    height: 80vh;
-    gap: 20px;
+header button {
+  color: black;
+  height: 60px;
+  width: 100px;
+  border-radius: 10%;
 }
 
+.buttons_before_logged {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+.Icon_after_logged {
+  display: none;
+  justify-content: flex-end;
+}
 
-.information_of_page{
-    margin: auto;
-    padding: 5px;
-    width: 300px;
-    border-radius: 10px;
-    font-size: smaller;
-    text-align:center;
-    background-color: #f5f5f5;
-    margin-bottom: 2vh;
-    /*nog de fonts kiezen enzvoort*/
+.content {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  height: 80vh;
+  gap: 20px;
+}
+
+.information_of_page {
+  margin: auto;
+  padding: 5px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: smaller;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin-bottom: 2vh;
+  /*nog de fonts kiezen enzvoort*/
 }
 .landing_page_projects {
-    filter: grayscale(75%);
-    height: 100%;
-    position: relative;
-    overflow: hidden; /*voor zekerheid*/
-
+  filter: grayscale(75%);
+  height: 100%;
+  position: relative;
+  overflow: hidden; /*voor zekerheid*/
 }
-.landing_page_projects:hover{
-    transform: scale(1.05);
-    filter: grayscale(0%);
+.landing_page_projects:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
 }
 
 .landing_page_projects a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
-.landing_page_projects p  {
-    color: RED;
-    font-size: 30px;
-    position: absolute; /* Position van de [p]*/
-    top: 30%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); /* dit Centreet het juist it*/
-    z-index: 2; 
-    font-weight: 900;
+.landing_page_projects p {
+  color: white;
+  font-size: 40px;
+  position: absolute; /* Position van de [p]*/
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* dit Centreet het juist it*/
+  z-index: 2;
+  font-weight: 900;
 }
 
-  
-  .background_image_project {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        border: solid black 1px;
-        cursor: pointer;
-        position: relative; /* Ensure proper positioning for child elements */
-        z-index: 1; /* Ensure it's below the paragraph */
-        
-        /*
+.background_image_project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  cursor: pointer;
+  position: relative; /* Ensure proper positioning for child elements */
+  z-index: 1; /* Ensure it's below the paragraph */
+
+  /*
         filter: grayscale(75%);
         transition: filter 0.5s ease;
         */
-    
-    }
-
-@media  only screen and (max-width: 600px) { 
-    
-   
-    /*Header Gedeelte*/
-    .buttons_before_logged { justify-content:space-between;}
-    header button{ height: 50px; width: 100px;}
-
-    .information_of_page{ margin: auto; background-color: lightcoral;margin-bottom: 1vh;}
-    .information_of_page h3 { font-size: 20px;margin: 2px;} 
-    .information_of_page p{ font-size: x-small;}
-    .content{ display: block; height: 100%;  height: 150px; }
-    .landing_page_projects {  margin-bottom: 2vh; filter: grayscale(15%);}
-
 }
 
+@media only screen and (max-width: 600px) {
+  /*Header Gedeelte*/
+  .buttons_before_logged {
+    justify-content: space-between;
+  }
+  header button {
+    height: 50px;
+    width: 100px;
+  }
+
+  .information_of_page {
+    margin: auto;
+    background-color: lightcoral;
+    margin-bottom: 1vh;
+  }
+  .information_of_page h3 {
+    font-size: 20px;
+    margin: 2px;
+  }
+  .information_of_page p {
+    font-size: x-small;
+  }
+  .content {
+    display: block;
+    height: 100%;
+    height: 150px;
+  }
+  .landing_page_projects {
+    margin-bottom: 2vh;
+    filter: grayscale(15%);
+  }
+}
 
 /*POPUP GEDEELTE*/
 .popup {
-    background-color: gray;
-    color: black;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Adjust width for mobile version */
-    max-width: 400px; /* Set a maximum width for larger screens */
-    height: 200px; /* Adjust height for mobile version */
-    max-height: 400px; /* Set a maximum height for larger screens */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 5px;
-    border-radius: 10%;
-    z-index: 9999;
-  }
-  
-  .close-button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+  background-color: gray;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width for mobile version */
+  max-width: 400px; /* Set a maximum width for larger screens */
+  height: 200px; /* Adjust height for mobile version */
+  max-height: 400px; /* Set a maximum height for larger screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 5px;
+  border-radius: 10%;
+  z-index: 9999;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 /*DROPDOWN SECTION*/
 
 .dropbtn {
-    background-image: url("../Images/User_Icon_Black.png");
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: 30px;
-    background-color: lightgray;
+  background-image: url("../Images/User_Icon_Black.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  background-color: lightgray;
 
-    color: white;
-    padding: 10px;
-    border: solid black 1px;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    text-align: center;
-    display: none;
-    position:fixed;
-    background-color: #f1f1f1;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 10%; /*dit is om de positie van de content te tonnen, weinig aanraken aub !*/
-  }
-  
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover{
-    background-color: #2980B9;
-  }
-  .show {display: block;}
+  color: white;
+  padding: 10px;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 10%; /*dit is om de positie van de content te tonnen, weinig aanraken aub !*/
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; 
+}
+
+.dropdown-content a:hover {
+  background-color: #2980b9;
+}
+.show {
+  display: block;
+}
